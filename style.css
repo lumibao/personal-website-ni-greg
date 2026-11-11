@@ -256,8 +256,10 @@ h3 {
 }
 
 .art-slot {
-  aspect-ratio: 3 / 3.6;
-  max-height: 440px;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
   border: 1px solid rgba(255, 255, 255, 0.14);
   background:
     linear-gradient(200deg, rgba(255, 30, 91, 0.22), transparent 55%),
@@ -287,8 +289,8 @@ h3 {
 
 .art-tag {
   position: absolute;
-  left: -1px;
-  bottom: 34px;
+  left: calc(50% - 200px);
+  bottom: 26px;
   margin: 0;
   padding: 4px 12px;
   font-family: var(--head);
@@ -546,7 +548,7 @@ h3 {
 
 .preview {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 190px 1fr;
   gap: 24px;
   align-items: center;
   padding: 18px;
@@ -555,7 +557,7 @@ h3 {
 }
 
 .preview-art {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   background: #0b0b11;
   border: 1px solid rgba(255, 255, 255, 0.12);
   display: grid;
@@ -958,8 +960,11 @@ code {
   }
 
   .art-slot {
-    max-height: 320px;
-    aspect-ratio: 16 / 11;
+    max-width: 320px;
+  }
+
+  .art-tag {
+    left: calc(50% - 160px);
   }
 
   .select {
