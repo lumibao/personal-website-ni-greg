@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>greg's corner of the internet</title>
+<title>Greg</title>
+<meta name="description" content="Personal website of Greg — student from the Philippines.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,308 +13,303 @@
 <div class="page">
 
   <header>
-    <h1>greg</h1>
-    <p class="tagline">student. currently figuring out html.</p>
+    <a class="name" href="#top">Greg</a>
     <nav>
-      <a href="#about">about</a>
-      <a href="#photos">photos</a>
-      <a href="#thoughts">thoughts</a>
-      <a href="#contact">contact</a>
-      <a href="#activity">school stuff</a>
+      <a href="#about">About</a>
+      <a href="#photos">Photos</a>
+      <a href="#notes">Notes</a>
+      <a href="#contact">Contact</a>
+      <a href="#school">School</a>
     </nav>
   </header>
 
-  <!-- HOME -->
-  <section id="home">
-    <p>Hi. I'm Greg. This is a website I made for our ICT subject, but I ended up
-    putting a lot of myself into it so it doesn't feel like homework anymore.</p>
+  <!-- INTRO -->
+  <section id="top">
+    <p class="lead">I'm Greg, a student from the Philippines. This is my personal website.</p>
 
-    <p>I'm 18. My birthday is <strong>November 25, 2007</strong>, which means
-    I'm always the one bringing the cake in the last quarter of the year.</p>
+    <p>It has three parts I actually use: a short page about me, a few photos, and
+    some short notes. The last section is for our ICT subject, where we were asked
+    to make a resume, a calendar, a banner, a background, a logo, and a template.</p>
 
-    <p>I don't really know what I'm doing with CSS yet. I learned most of this from
-    watching one video at 1am and copying the parts that worked. If something looks
-    a little off, that's probably why.</p>
+    <p>I built this with plain HTML and CSS. No framework, no template. I'm still
+    learning, so it stays simple on purpose.</p>
 
-    <div class="photo-box">
-      <span>picture of me goes here</span>
-      <small>(placeholder — I'll drop a real one in soon)</small>
-    </div>
+    <dl class="facts">
+      <div>
+        <dt>Birthday</dt>
+        <dd>November 25, 2007</dd>
+      </div>
+      <div>
+        <dt>Age</dt>
+        <dd><span id="age">18</span></dd>
+      </div>
+      <div>
+        <dt>From</dt>
+        <dd>Philippines</dd>
+      </div>
+      <div>
+        <dt>Currently</dt>
+        <dd>Student</dd>
+      </div>
+    </dl>
   </section>
 
   <!-- ABOUT -->
   <section id="about">
-    <h2>about me</h2>
+    <h2>About</h2>
 
-    <p>I'm a student from the Philippines. I like music more than I like most subjects,
-    and I like making things even when they don't turn out great the first time.</p>
+    <p>I'm in school and most of my week goes to that. Outside class I listen to
+    music, draw when I have the time, and play games with friends.</p>
 
-    <p>I made this site so my classmates could see what I'm actually into instead of
-    just reading it off a form. It's easier to show people than to explain.</p>
+    <p>I don't have a big plan yet. I'm using this site to keep track of what I'm
+    into now, so I can look back at it later.</p>
 
-    <h3>the basics</h3>
-    <table class="plain">
-      <tr><th>name</th><td>Greg</td></tr>
-      <tr><th>birthday</th><td>November 25, 2007</td></tr>
-      <tr><th>age</th><td><span id="age">18</span></td></tr>
-      <tr><th>from</th><td>Philippines</td></tr>
-      <tr><th>currently</th><td>a student, and also a person who keeps restarting playlists</td></tr>
-    </table>
-
-    <h3>things I actually care about</h3>
-    <ul class="plain-list">
-      <li>Being honest, even when the honest answer is "I don't know yet."</li>
-      <li>Making things, badly at first, then slightly better.</li>
-      <li>Not being a jerk online. It's a low bar, but here we are.</li>
+    <h3>Interests</h3>
+    <ul>
+      <li>Music — I listen to almost anything, mostly while studying.</li>
+      <li>Drawing — I'm not good at it, but I keep a sketchbook.</li>
+      <li>Games — mostly with friends, mostly losing.</li>
     </ul>
 
-    <h3>things I like right now</h3>
-    <ul class="plain-list">
-      <li>Iced coffee, even in the rain.</li>
-      <li>Finishing a drawing at 2am and deciding it's good enough.</li>
-      <li>Losing at games with friends and somehow still having fun.</li>
-      <li>Quiet afternoons with nothing to do.</li>
+    <h3>Skills</h3>
+    <ul>
+      <li>Basic HTML and CSS</li>
+      <li>Drawing</li>
+      <li>Working in a group</li>
     </ul>
   </section>
 
   <!-- PHOTOS -->
   <section id="photos">
-    <h2>photos</h2>
+    <h2>Photos</h2>
 
-    <p>Most of these are empty for now. I'm still choosing which ones to put up,
-    and honestly I keep changing my mind.</p>
+    <p>Empty for now. I'll add photos here once I pick which ones to use.</p>
 
-    <div class="photos">
+    <div class="grid">
       <figure>
-        <div class="photo-box small"><span>photo 1</span></div>
-        <figcaption>placeholder</figcaption>
+        <div class="photo"><span>Photo</span></div>
+        <figcaption>Placeholder</figcaption>
       </figure>
       <figure>
-        <div class="photo-box small"><span>photo 2</span></div>
-        <figcaption>placeholder</figcaption>
+        <div class="photo"><span>Photo</span></div>
+        <figcaption>Placeholder</figcaption>
       </figure>
       <figure>
-        <div class="photo-box small"><span>photo 3</span></div>
-        <figcaption>placeholder</figcaption>
+        <div class="photo"><span>Photo</span></div>
+        <figcaption>Placeholder</figcaption>
       </figure>
       <figure>
-        <div class="photo-box small"><span>drawing 1</span></div>
-        <figcaption>something I made</figcaption>
+        <div class="photo"><span>Drawing</span></div>
+        <figcaption>Placeholder</figcaption>
       </figure>
       <figure>
-        <div class="photo-box small"><span>drawing 2</span></div>
-        <figcaption>something I made</figcaption>
+        <div class="photo"><span>Drawing</span></div>
+        <figcaption>Placeholder</figcaption>
       </figure>
       <figure>
-        <div class="photo-box small"><span>photo 4</span></div>
-        <figcaption>placeholder</figcaption>
+        <div class="photo"><span>Photo</span></div>
+        <figcaption>Placeholder</figcaption>
       </figure>
     </div>
   </section>
 
-  <!-- THOUGHTS -->
-  <section id="thoughts">
-    <h2>thoughts</h2>
+  <!-- NOTES -->
+  <section id="notes">
+    <h2>Notes</h2>
 
-    <p>Short notes. I write here when I have something to say and nowhere else to put it.</p>
+    <p>Short entries. I write here when something is worth remembering.</p>
 
     <article>
-      <p class="date">11 november 2026</p>
-      <h3>this website took longer than I expected</h3>
-      <p>I thought making a website would take one afternoon. It took three weekends,
-      and half of that was me fixing the spacing between sections.</p>
-      <p>But I like it now. It's not the prettiest thing, but every part of it is
-      something I typed myself, and I understand all of it. That feels better than
-      something fancy that I couldn't explain.</p>
-      <p class="note">lesson learned: margins are important and also evil.</p>
+      <p class="date">November 11, 2026</p>
+      <h3>Finishing this website</h3>
+      <p>This took me about three weekends. Most of the time went to fixing spacing
+      and making the page work on a phone.</p>
+      <p>I kept it simple because that's what I can maintain. Every part of it is
+      code I typed myself, so I know how to change it later.</p>
     </article>
 
     <article>
-      <p class="date">20 october 2026</p>
-      <h3>a good day, described plainly</h3>
-      <p>Woke up early enough to not rush. Had coffee. Finished a sketch I'd been
-      avoiding for a week. Played with friends until someone had to leave for dinner.</p>
-      <p>Nothing big happened. It was still a good day.</p>
+      <p class="date">October 20, 2026</p>
+      <h3>On drawing again</h3>
+      <p>I stopped drawing for a few months and started again this week. It's slower
+      than before but it still feels the same, which is a relief.</p>
     </article>
 
     <article>
-      <p class="date">2 september 2026</p>
-      <h3>first entry</h3>
-      <p>Starting this so there's a place for the things I think about but never say
-      out loud. Mostly small stuff. That's fine.</p>
+      <p class="date">September 2, 2026</p>
+      <h3>First entry</h3>
+      <p>I'm making this section so I have somewhere to put my thoughts. I don't
+      know yet how often I'll update it.</p>
     </article>
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
-    <h2>contact</h2>
+    <h2>Contact</h2>
 
-    <p>If you need to reach me, the form below goes nowhere yet — I haven't figured out
-    how to make it actually send. For now, these are the real ways:</p>
+    <p>You can reach me here. I usually reply after class.</p>
 
-    <ul class="plain-list">
-      <li>Facebook: <em>your-username</em></li>
-      <li>Instagram: <em>your-username</em></li>
-      <li>Email: <em>your@email.com</em></li>
+    <ul class="contact-list">
+      <li><span>Email</span><a href="mailto:your@email.com">your@email.com</a></li>
+      <li><span>Facebook</span><a href="#">your-username</a></li>
+      <li><span>Instagram</span><a href="#">your-username</a></li>
     </ul>
-
-    <p class="note">Still a student, so if I reply late it's probably because of school.</p>
 
     <form id="contactForm">
       <p>
-        <label for="name">your name</label>
-        <input type="text" id="name">
+        <label for="name">Name</label>
+        <input type="text" id="name" autocomplete="name">
       </p>
       <p>
-        <label for="email">your email</label>
-        <input type="email" id="email">
+        <label for="email">Email</label>
+        <input type="email" id="email" autocomplete="email">
       </p>
       <p>
-        <label for="message">message</label>
-        <textarea id="message" rows="5"></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" rows="4"></textarea>
       </p>
-      <p><button type="submit">send</button></p>
+      <p><button type="submit">Send</button></p>
     </form>
-    <p id="formMsg"></p>
+    <p id="formMsg" class="form-msg"></p>
+    <p class="small">The form doesn't send yet. It only checks that the fields are filled.</p>
   </section>
 
-  <!-- ACTIVITY / SCHOOL -->
-  <section id="activity">
-    <h2>school stuff</h2>
+  <!-- SCHOOL -->
+  <section id="school">
+    <h2>School</h2>
 
-    <p>This part is for our ICT subject. Our teacher asked for a resume, a calendar,
-    a banner, a background, a logo, and a template. All of it is here, and I kept it
-    simple so it matched the rest of the site.</p>
+    <p>Requirements for our ICT subject: a resume, a calendar, a banner, a
+    background, a logo, and a template. All six are below.</p>
 
-    <p class="jump">
-      <a href="#resume">resume</a> ·
-      <a href="#calendar">calendar</a> ·
-      <a href="#banner">banner</a> ·
-      <a href="#background">background</a> ·
-      <a href="#logo">logo</a> ·
-      <a href="#template">template</a>
+    <p class="anchors">
+      <a href="#resume">Resume</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#banner">Banner</a>
+      <a href="#background">Background</a>
+      <a href="#logo">Logo</a>
+      <a href="#template">Template</a>
     </p>
 
-    <!-- resume -->
-    <div class="activity-item" id="resume">
-      <h3>1. resume</h3>
+    <!-- 1. RESUME -->
+    <div class="block" id="resume">
+      <h3>Resume</h3>
 
       <div class="resume">
-        <p class="resume-name">Greg</p>
-        <p class="resume-sub">Student · Philippines</p>
+        <div class="resume-head">
+          <p class="resume-name">Greg</p>
+          <p class="resume-sub">Student · Philippines</p>
+        </div>
 
-        <p class="resume-label">personal details</p>
-        <table class="plain">
-          <tr><th>birthday</th><td>November 25, 2007</td></tr>
-          <tr><th>age</th><td><span id="age2">18</span></td></tr>
-          <tr><th>email</th><td>your@email.com</td></tr>
+        <h4>Personal details</h4>
+        <table>
+          <tr><th>Birthday</th><td>November 25, 2007</td></tr>
+          <tr><th>Age</th><td><span id="age2">18</span></td></tr>
+          <tr><th>Email</th><td>your@email.com</td></tr>
         </table>
 
-        <p class="resume-label">education</p>
-        <p><strong>[School Name]</strong><br>[Grade / Strand]<br><em>palitan mo ito ng totoong school</em></p>
+        <h4>Education</h4>
+        <p><strong>[School Name]</strong><br>[Grade / Strand]</p>
 
-        <p class="resume-label">skills</p>
-        <ul class="plain-list">
-          <li>Basic HTML and CSS — enough to build this page</li>
-          <li>Drawing and simple design</li>
-          <li>Working with a group without disappearing</li>
+        <h4>Skills</h4>
+        <ul>
+          <li>Basic HTML and CSS</li>
+          <li>Drawing</li>
+          <li>Working in a group</li>
         </ul>
 
-        <p class="resume-label">objective</p>
-        <p>To build something of my own and actually understand how it works,
-        instead of copying a design I can't explain.</p>
+        <h4>Objective</h4>
+        <p>To build a personal website that I understand and can keep updating.</p>
       </div>
     </div>
 
-    <!-- calendar -->
-    <div class="activity-item" id="calendar">
-      <h3>2. calendar</h3>
-      <p>November 2026. My birthday is on the 25th, so I marked it.</p>
+    <!-- 2. CALENDAR -->
+    <div class="block" id="calendar">
+      <h3>Calendar</h3>
+
+      <p>November 2026. My birthday is on the 25th.</p>
 
       <table class="calendar">
-        <caption>NOVEMBER 2026</caption>
-        <tr>
-          <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-        </tr>
-        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
-        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
-        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
-        <tr><td>22</td><td>23</td><td>24</td><td class="bd">25</td><td>26</td><td>27</td><td>28</td></tr>
-        <tr><td>29</td><td>30</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        <caption>November 2026</caption>
+        <thead>
+          <tr>
+            <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+          <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+          <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+          <tr><td>22</td><td>23</td><td>24</td><td class="birthday">25</td><td>26</td><td>27</td><td>28</td></tr>
+          <tr><td>29</td><td>30</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        </tbody>
       </table>
-      <p class="note">Red box = my birthday. I turn 19 that day.</p>
     </div>
 
-    <!-- banner -->
-    <div class="activity-item" id="banner">
-      <h3>3. banner</h3>
+    <!-- 3. BANNER -->
+    <div class="block" id="banner">
+      <h3>Banner</h3>
 
       <div class="banner">
-        <span class="banner-name">greg</span>
-        <span class="banner-sub">a small personal website · est. 2026</span>
+        <span class="banner-name">Greg</span>
+        <span class="banner-sub">Personal website</span>
       </div>
 
-      <p class="note">Made it with text and a couple of borders. If I end up drawing
-      a real banner, I'll replace this with an image.</p>
+      <p class="small">Made with text and a border. I'll replace it with an image if I draw one.</p>
     </div>
 
-    <!-- background -->
-    <div class="activity-item" id="background">
-      <h3>4. background</h3>
+    <!-- 4. BACKGROUND -->
+    <div class="block" id="background">
+      <h3>Background</h3>
 
-      <p>I used an off-white color instead of pure white because pure white was
-      harsh to look at for too long.</p>
+      <p>The page uses white with a small amount of gray for panels. Links and
+      highlights use one color so the page doesn't look busy.</p>
 
-      <p>
-        page background &nbsp;<span class="swatch" style="background:#fbf9f4"></span>
-        <code>#fbf9f4</code><br>
-        text &nbsp;<span class="swatch" style="background:#2b2b2b"></span>
-        <code>#2b2b2b</code><br>
-        accent &nbsp;<span class="swatch" style="background:#8a3a2f"></span>
-        <code>#8a3a2f</code>
-      </p>
+      <ul class="swatches">
+        <li><span class="chip" style="background:#ffffff"></span>#ffffff — page</li>
+        <li><span class="chip" style="background:#f6f6f6"></span>#f6f6f6 — panel</li>
+        <li><span class="chip" style="background:#1a1a1a"></span>#1a1a1a — text</li>
+        <li><span class="chip" style="background:#b4420f"></span>#b4420f — accent</li>
+      </ul>
     </div>
 
-    <!-- logo -->
-    <div class="activity-item" id="logo">
-      <h3>5. logo</h3>
+    <!-- 5. LOGO -->
+    <div class="block" id="logo">
+      <h3>Logo</h3>
 
-      <p>My logo is just the letter G. I drew it in a text editor as an SVG,
-      which I didn't know was possible before this subject.</p>
+      <p>A letter G in a square. I made it as an SVG file, so it stays sharp at
+      any size.</p>
 
-      <p class="logo-row">
-        <img src="favicon.svg" alt="my logo" width="72" height="72">
-        <img src="favicon.svg" alt="favicon size" width="32" height="32">
-        <img src="favicon.svg" alt="favicon size" width="16" height="16">
+      <p class="logos">
+        <img src="favicon.svg" alt="Logo, large" width="80" height="80">
+        <img src="favicon.svg" alt="Logo, medium" width="40" height="40">
+        <img src="favicon.svg" alt="Logo, favicon size" width="16" height="16">
       </p>
 
-      <p class="note">The small ones are the favicon — the icon on the browser tab.
-      File is <code>favicon.svg</code>.</p>
+      <p class="small">The smallest one is the favicon, the icon on the browser tab. File: <code>favicon.svg</code></p>
     </div>
 
-    <!-- template -->
-    <div class="activity-item" id="template">
-      <h3>6. template</h3>
+    <!-- 6. TEMPLATE -->
+    <div class="block" id="template">
+      <h3>Template</h3>
 
-      <p>The layout is one column, top to bottom. I tried a grid first and it
-      looked like every other school website, so I changed it.</p>
+      <p>One column, top to bottom. Each section is separated by a thin line.</p>
 
-      <ol class="wireframe">
-        <li>header — name, tagline, links</li>
-        <li>home — short intro, birthday, photo</li>
-        <li>about — basics, values, things I like</li>
-        <li>photos — six placeholders</li>
-        <li>thoughts — dated notes</li>
-        <li>contact — links and a form that doesn't work yet</li>
-        <li>school stuff — resume, calendar, banner, background, logo, template</li>
-        <li>footer — last updated, back to top</li>
+      <ol class="wire">
+        <li>Header — name and links</li>
+        <li>Intro — who I am, quick facts</li>
+        <li>About — interests and skills</li>
+        <li>Photos — six placeholders</li>
+        <li>Notes — dated entries</li>
+        <li>Contact — links and a form</li>
+        <li>School — the six requirements</li>
+        <li>Footer</li>
       </ol>
     </div>
   </section>
 
   <footer>
-    <p>Last updated 11 November 2026. Made by me, slowly.</p>
-    <p><a href="#home">back to top</a></p>
+    <p>Greg · November 2026</p>
+    <p><a href="#top">Back to top</a></p>
   </footer>
 
 </div>
