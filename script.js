@@ -1,5 +1,4 @@
-// Age, from my birthday
-var birthday = new Date(2007, 10, 25); // 10 = November
+var birthday = new Date(2007, 10, 25);
 
 function getAge() {
   var now = new Date();
@@ -13,10 +12,51 @@ function getAge() {
   return age;
 }
 
-document.getElementById("age").textContent = getAge();
-document.getElementById("age2").textContent = getAge();
+document.getElementById("ageHero").textContent = getAge();
+document.getElementById("ageCard").textContent = getAge();
+document.getElementById("ageResume").textContent = getAge();
 
-// Contact form: checks the fields, doesn't send anything yet
+var menu = document.getElementById("menu");
+var menuBtn = document.getElementById("menuBtn");
+var sub = document.querySelector(".sub");
+var subBtn = document.getElementById("activityBtn");
+
+menuBtn.addEventListener("click", function () {
+  var open = menu.classList.toggle("is-open");
+  menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+});
+
+subBtn.addEventListener("click", function (event) {
+  event.stopPropagation();
+  var open = sub.classList.toggle("is-open");
+  subBtn.setAttribute("aria-expanded", open ? "true" : "false");
+});
+
+document.addEventListener("click", function (event) {
+  if (!sub.contains(event.target)) {
+    sub.classList.remove("is-open");
+    subBtn.setAttribute("aria-expanded", "false");
+  }
+});
+
+document.querySelectorAll(".menu a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    menu.classList.remove("is-open");
+    menuBtn.setAttribute("aria-expanded", "false");
+    sub.classList.remove("is-open");
+    subBtn.setAttribute("aria-expanded", "false");
+  });
+});
+
+document.querySelectorAll(".menu > a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    document.querySelectorAll(".menu > a").forEach(function (item) {
+      item.classList.remove("is-active");
+    });
+    link.classList.add("is-active");
+  });
+});
+
 document.getElementById("contactForm").addEventListener("submit", function (event) {
   event.preventDefault();
 
