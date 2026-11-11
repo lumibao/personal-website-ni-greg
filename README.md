@@ -1,33 +1,32 @@
 # Personal Website ni Greg
 
-Simple Valorant-style personal website. Birthday: **November 25, 2007**.
+Simpleng personal website na ginawa ko para sa school project. Beginner pa lang ako sa HTML at CSS kaya simple lang ang design.
+
+Birthday ko: **November 25, 2007**
 
 ## Paano buksan
-- I-double click ang `index.html`, o
-- `python3 -m http.server 8000` tapos buksan ang `http://localhost:8000`
+I-double click lang ang `index.html`. Yun na yun.
 
-## Nav Menu
-Home · About · Interests · Gallery · Thoughts · Contact · **Activity ▾**
-
-### Activity (lahat ng school requirements)
-- **Resume** — `#resume` (palitan ang school at contact details)
-- **Calendar** — `#calendar` (November 2026, naka-highlight ang Nov 25 birthday mo; may prev/next month)
-- **Banner** — `#banner` (yung banner sa taas ng Home)
-- **Background** — `#background` (dark #0F1923 + color swatches)
-- **Logo** — `#logo` (favicon.svg, makikita rin sa browser tab)
-- **Template** — `#template` (layout diagram ng site)
+## Mga sections
+- **Home** - Welcome at picture ko
+- **About Me** - Kwento ko at quick facts (table)
+- **My Interests** - Music, Art, Games, Style
+- **My Gallery** - Mga pictures ko (placeholder muna)
+- **My Thoughts** - Journal ko
+- **Contact** - Socials at message form
+- **Activity** - Resume, Calendar, Banner, Background, Logo, Template
 
 ## Files
-- `index.html` — content + lahat ng sections
-- `style.css` — Valorant-style design (dark #0F1923, red #FF4655, angular cuts)
-- `script.js` — age calculator (from Nov 25, 2007), calendar, gallery, read more, form
-- `favicon.svg` — logo + favicon (red V)
+- `index.html` - lahat ng content
+- `style.css` - design (simple lang, light gray at dark blue)
+- `script.js` - age computation, Read More button, contact form
+- `favicon.svg` - logo at favicon ko
 
 ## Paano palitan ang pictures
-Hanapin ang **PLACEHOLDER** / **PALITAN** sa `index.html`, tapos palitan ng:
+Hanapin ang `[ Picture ko dito ]` sa `index.html`, tapos palitan ng:
 ```html
-<img src="picture-mo.jpg" alt="Greg" style="width:100%">
+<img src="picture-ko.jpg" alt="ako" width="300">
 ```
 
-## Paano palitan ang logo/favicon
-Palitan ang laman ng `favicon.svg` — automatic na mag-a-update sa nav, resume, at browser tab.
+## Paano palitan ang school sa resume
+Hanapin ang `[School Name]` sa `index.html` at palitan ng totoong school ko.
