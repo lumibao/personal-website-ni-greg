@@ -3,349 +3,356 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Greg — My Personal Website</title>
-<meta name="description" content="A digital space where I share my story, favorite things, photos, creative work and personal reflections.">
+<title>GREG — Personal Website</title>
+<meta name="description" content="Greg's personal website — story, interests, gallery, thoughts, resume and school activity.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Caveat:wght@600;700&family=Karla:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ============ NAVIGATION (shared menu) ============ -->
+<!-- ================= NAV ================= -->
 <header class="nav" id="top">
   <div class="nav-inner">
-    <a href="#home" class="logo">GREG<span>.</span></a>
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="#home" class="logo">
+      <img src="favicon.svg" alt="Greg logo" width="34" height="34">
+      <span>GREG<em>//</em>GG</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav-links" id="navLinks">
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
       <a href="#interests">Interests</a>
       <a href="#gallery">Gallery</a>
       <a href="#thoughts">Thoughts</a>
-      <a href="#contact" class="nav-cta">Contact</a>
+      <a href="#contact">Contact</a>
+      <div class="dropdown">
+        <button class="dropdown-btn" id="activityBtn" aria-haspopup="true" aria-expanded="false">Activity ▾</button>
+        <div class="dropdown-menu" id="activityMenu">
+          <a href="#resume">Resume</a>
+          <a href="#calendar">Calendar</a>
+          <a href="#banner">Banner</a>
+          <a href="#background">Background</a>
+          <a href="#logo">Logo</a>
+          <a href="#template">Template</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
 
-<!-- ============ 01 HOME ============ -->
+<!-- ================= HOME / BANNER ================= -->
 <section class="hero" id="home">
-  <div class="wrap hero-grid">
-    <div class="hero-text">
-      <p class="hand-note">welcome to my little corner of the internet ↴</p>
-      <h1>Hi, I'm Greg.<br><span class="hl">This is my space.</span></h1>
-      <p class="hero-lead">
-        A digital space that lets me show who I am in my own voice — through my story,
-        favorite things, photos, creative work and personal reflections.
-        Take your time, explore, and get to know the person behind this site.
-      </p>
-      <div class="hero-btns">
-        <a href="#about" class="btn btn-dark">Explore my story →</a>
-        <a href="#gallery" class="btn btn-yellow">See my gallery</a>
+  <div class="wrap">
+    <div class="banner">
+      <div class="banner-text">
+        <p class="kicker">// PERSONAL WEBSITE — PLAYER PROFILE</p>
+        <h1>GREG<span class="red">.</span></h1>
+        <p class="banner-sub">My story. My interests. My work.<br>Born <strong>November 25, 2007</strong> — <span id="ageHero">18</span> years old.</p>
+        <div class="hero-btns">
+          <a href="#resume" class="btn btn-red">View Resume →</a>
+          <a href="#activity" class="btn btn-ghost">View Activity</a>
+        </div>
       </div>
-      <p class="hero-small">Friends, classmates, and anyone curious — welcome!</p>
-    </div>
-
-    <!-- PALITAN: profile picture mo dito. Hanapin lang ang "PLACEHOLDER" sa code. -->
-    <div class="hero-photo">
-      <div class="polaroid">
-        <div class="tape tape-top"></div>
+      <div class="player-card">
+        <!-- PALITAN: profile picture mo dito -->
         <div class="placeholder ph-profile">
           <span class="ph-icon">◎</span>
           <strong>PROFILE PICTURE</strong>
-          <small>PLACEHOLDER — ilagay dito<br>ang picture mo</small>
+          <small>PLACEHOLDER — ilagay dito ang picture mo</small>
         </div>
-        <p class="polaroid-caption">— that's me, Greg ✎</p>
+        <dl class="player-info">
+          <div><dt>NAME</dt><dd>Greg</dd></div>
+          <div><dt>BIRTHDAY</dt><dd>Nov 25, 2007</dd></div>
+          <div><dt>AGE</dt><dd><span id="ageCard">18</span> yrs old</dd></div>
+          <div><dt>ROLE</dt><dd>Student</dd></div>
+          <div><dt>LOCATION</dt><dd>Philippines</dd></div>
+        </dl>
       </div>
-      <p class="hand-note note-rotate">start here! ↑</p>
     </div>
-  </div>
-
-  <div class="wrap hero-cards">
-    <a href="#about" class="mini-card">
-      <span class="mini-num">01</span>
-      <strong>My Story</strong>
-      <small>Who I am, what I value, and a few fun facts.</small>
-    </a>
-    <a href="#interests" class="mini-card">
-      <span class="mini-num">02</span>
-      <strong>My Interests</strong>
-      <small>The things I love and why they matter to me.</small>
-    </a>
-    <a href="#thoughts" class="mini-card">
-      <span class="mini-num">03</span>
-      <strong>My Thoughts</strong>
-      <small>Journal-style posts, ideas and reflections.</small>
-    </a>
   </div>
 </section>
 
-<!-- ============ 02 ABOUT ME ============ -->
+<!-- ================= ABOUT ================= -->
 <section class="section" id="about">
   <div class="wrap">
-    <div class="section-head">
-      <span class="sec-num">02</span>
-      <h2>About Me</h2>
-      <p class="hand-note">the person behind the site</p>
-    </div>
-
+    <div class="section-head"><span class="sec-num">01</span><h2>About Me</h2><span class="sec-line"></span></div>
     <div class="about-grid">
-      <div class="about-bio">
-        <h3>Short biography</h3>
-        <!-- PALITAN: baguhin ang kwento mo dito -->
-        <p>
-          Hi! I'm Greg, a student who enjoys expressing myself through the things I create
-          and the things I love. I made this website so my friends, classmates, and anyone
-          who visits can get a glimpse of who I really am — not just a name on a list,
-          but a person with stories, interests, and a creative side.
-        </p>
-        <p>
-          I believe a personal website should feel welcoming and easy to explore.
-          So I kept this space simple and honest: my story, my favorite things,
-          my photos and creative work, and my personal reflections. If you're reading
-          this, thanks for stopping by — I hope you enjoy looking around.
-        </p>
-
-        <h3 style="margin-top:28px">What I value</h3>
+      <div>
+        <h3>Short Biography</h3>
+        <!-- PALITAN: kwento mo -->
+        <p>Hi! I'm Greg, a student who enjoys expressing myself through the things I create and the things I love. I made this website so my friends, classmates, and anyone who visits can get a glimpse of who I really am.</p>
+        <p>This site is simple and honest: my story, my favorite things, my photos and creative work, and my personal reflections. Thanks for stopping by — explore and enjoy.</p>
+        <h3 style="margin-top:22px">What I Value</h3>
         <ul class="values">
-          <li><strong>Honesty</strong> — being real about who I am and what I feel.</li>
-          <li><strong>Creativity</strong> — making things, even imperfect ones, is how I learn.</li>
-          <li><strong>Curiosity</strong> — always asking questions and trying new things.</li>
-          <li><strong>Respect</strong> — listening to others and keeping this space welcoming.</li>
+          <li><strong>Honesty</strong> — being real about who I am.</li>
+          <li><strong>Creativity</strong> — making things, even imperfect ones.</li>
+          <li><strong>Curiosity</strong> — always learning new things.</li>
+          <li><strong>Respect</strong> — keeping this space welcoming.</li>
         </ul>
       </div>
-
-      <aside class="about-side">
-        <div class="fact-card">
-          <h3>Quick facts</h3>
-          <!-- PALITAN: totoong details mo -->
-          <dl>
-            <div><dt>Name</dt><dd>Greg</dd></div>
-            <div><dt>Role</dt><dd>Student</dd></div>
-            <div><dt>Based in</dt><dd>Philippines</dd></div>
-            <div><dt>Favorite color</dt><dd>Mustard yellow</dd></div>
-            <div><dt>Currently into</dt><dd>Music &amp; art</dd></div>
-            <div><dt>Motto</dt><dd>"Make it personal."</dd></div>
-          </dl>
-        </div>
-        <div class="placeholder ph-small">
-          <span class="ph-icon">✎</span>
-          <strong>SIGNATURE / DOODLE</strong>
-          <small>PLACEHOLDER — lagay dito ang<br>signature o doodle mo</small>
-        </div>
+      <aside class="fact-card">
+        <h3>Quick Facts</h3>
+        <dl>
+          <div><dt>Name</dt><dd>Greg</dd></div>
+          <div><dt>Birthday</dt><dd>November 25, 2007</dd></div>
+          <div><dt>Age</dt><dd><span id="ageFact">18</span> years old</dd></div>
+          <div><dt>Role</dt><dd>Student</dd></div>
+          <div><dt>Based in</dt><dd>Philippines</dd></div>
+          <div><dt>Currently into</dt><dd>Music &amp; Art</dd></div>
+          <div><dt>Motto</dt><dd>"Make it personal."</dd></div>
+        </dl>
       </aside>
     </div>
   </div>
 </section>
 
-<!-- ============ 03 MY INTERESTS ============ -->
+<!-- ================= INTERESTS ================= -->
 <section class="section section-alt" id="interests">
   <div class="wrap">
-    <div class="section-head">
-      <span class="sec-num">03</span>
-      <h2>My Interests</h2>
-      <p class="hand-note">things I love, and why they matter</p>
-    </div>
-
+    <div class="section-head"><span class="sec-num">02</span><h2>My Interests</h2><span class="sec-line"></span></div>
     <div class="interest-grid">
-      <article class="interest-card">
-        <div class="placeholder ph-card">
-          <span class="ph-icon">♪</span>
-          <small>PLACEHOLDER — picture ng<br>favorite music mo</small>
-        </div>
-        <h3>Music</h3>
-        <p>Music is how I express feelings I can't always put into words. It keeps me company while studying and inspires me when I'm creating.</p>
-        <span class="tag">♪ listening</span>
+      <article class="card">
+        <div class="placeholder ph-card"><span class="ph-icon">♪</span><small>PLACEHOLDER — music picture</small></div>
+        <h3>Music</h3><p>Music is how I express feelings I can't always put into words.</p><span class="tag">♪ LISTENING</span>
       </article>
-
-      <article class="interest-card">
-        <div class="placeholder ph-card">
-          <span class="ph-icon">✎</span>
-          <small>PLACEHOLDER — picture ng<br>artwork mo</small>
-        </div>
-        <h3>Art</h3>
-        <p>Drawing and making things by hand is my way of relaxing and showing ideas visually. Every piece teaches me something new.</p>
-        <span class="tag">✎ creating</span>
+      <article class="card">
+        <div class="placeholder ph-card"><span class="ph-icon">✎</span><small>PLACEHOLDER — artwork</small></div>
+        <h3>Art</h3><p>Drawing and making things by hand helps me relax and show ideas.</p><span class="tag">✎ CREATING</span>
       </article>
-
-      <article class="interest-card">
-        <div class="placeholder ph-card">
-          <span class="ph-icon">🎮</span>
-          <small>PLACEHOLDER — picture ng<br>laro mo</small>
-        </div>
-        <h3>Games</h3>
-        <p>Games let me explore new worlds, solve problems, and have fun with friends. They also teach me teamwork and patience.</p>
-        <span class="tag">🎮 playing</span>
+      <article class="card">
+        <div class="placeholder ph-card"><span class="ph-icon">🎮</span><small>PLACEHOLDER — game picture</small></div>
+        <h3>Games</h3><p>Games let me explore new worlds and have fun with friends.</p><span class="tag">🎮 PLAYING</span>
       </article>
-
-      <article class="interest-card">
-        <div class="placeholder ph-card">
-          <span class="ph-icon">✦</span>
-          <small>PLACEHOLDER — picture ng<br>style mo</small>
-        </div>
-        <h3>Style</h3>
-        <p>Style is part of my identity. The way I dress and present myself is a small but honest way of saying "this is me."</p>
-        <span class="tag">✦ expressing</span>
+      <article class="card">
+        <div class="placeholder ph-card"><span class="ph-icon">✦</span><small>PLACEHOLDER — style picture</small></div>
+        <h3>Style</h3><p>Style is part of my identity — a simple way of saying "this is me."</p><span class="tag">✦ EXPRESSING</span>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ============ 04 MY GALLERY ============ -->
+<!-- ================= GALLERY ================= -->
 <section class="section" id="gallery">
   <div class="wrap">
-    <div class="section-head">
-      <span class="sec-num">04</span>
-      <h2>My Gallery</h2>
-      <p class="hand-note">photos, memories &amp; creative work</p>
-    </div>
-
-    <div class="gallery-filters" id="galleryFilters">
+    <div class="section-head"><span class="sec-num">03</span><h2>My Gallery</h2><span class="sec-line"></span></div>
+    <div class="filters" id="galleryFilters">
       <button class="filter-btn active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="photo">Photos</button>
-      <button class="filter-btn" data-filter="work">Creative work</button>
+      <button class="filter-btn" data-filter="work">Creative Work</button>
     </div>
-
-    <!-- PALITAN: palitan ang bawat placeholder ng totoong picture mo.
-         Para sa <img>, palitan ang <div class="placeholder..."> ng:
-         <img src="picture-mo.jpg" alt="Caption"> -->
+    <!-- PALITAN: palitan ang placeholder ng <img src="picture-mo.jpg" alt="..."> -->
     <div class="gallery-grid" id="galleryGrid">
-      <figure class="gallery-item" data-cat="photo">
-        <div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER<br>Photo 1</small></div>
-        <figcaption><strong>Photo 1</strong> — caption mo dito</figcaption>
-      </figure>
-      <figure class="gallery-item" data-cat="work">
-        <div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER<br>Creative work 1</small></div>
-        <figcaption><strong>Creative work 1</strong> — caption mo dito</figcaption>
-      </figure>
-      <figure class="gallery-item" data-cat="photo">
-        <div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER<br>Photo 2</small></div>
-        <figcaption><strong>Photo 2</strong> — caption mo dito</figcaption>
-      </figure>
-      <figure class="gallery-item" data-cat="work">
-        <div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER<br>Creative work 2</small></div>
-        <figcaption><strong>Creative work 2</strong> — caption mo dito</figcaption>
-      </figure>
-      <figure class="gallery-item" data-cat="photo">
-        <div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER<br>Photo 3</small></div>
-        <figcaption><strong>Photo 3</strong> — caption mo dito</figcaption>
-      </figure>
-      <figure class="gallery-item" data-cat="work">
-        <div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER<br>Creative work 3</small></div>
-        <figcaption><strong>Creative work 3</strong> — caption mo dito</figcaption>
-      </figure>
+      <figure class="gallery-item" data-cat="photo"><div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER — Photo 1</small></div><figcaption><strong>Photo 1</strong> — caption mo dito</figcaption></figure>
+      <figure class="gallery-item" data-cat="work"><div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER — Work 1</small></div><figcaption><strong>Creative Work 1</strong> — caption mo dito</figcaption></figure>
+      <figure class="gallery-item" data-cat="photo"><div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER — Photo 2</small></div><figcaption><strong>Photo 2</strong> — caption mo dito</figcaption></figure>
+      <figure class="gallery-item" data-cat="work"><div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER — Work 2</small></div><figcaption><strong>Creative Work 2</strong> — caption mo dito</figcaption></figure>
+      <figure class="gallery-item" data-cat="photo"><div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER — Photo 3</small></div><figcaption><strong>Photo 3</strong> — caption mo dito</figcaption></figure>
+      <figure class="gallery-item" data-cat="work"><div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER — Work 3</small></div><figcaption><strong>Creative Work 3</strong> — caption mo dito</figcaption></figure>
     </div>
-    <p class="gallery-note">↑ Click any item to view it bigger. Palitan mo lang ng totoong pictures — naka-ready na ang grid.</p>
   </div>
 </section>
 
-<!-- ============ 05 MY THOUGHTS ============ -->
+<!-- ================= THOUGHTS ================= -->
 <section class="section section-alt" id="thoughts">
   <div class="wrap">
-    <div class="section-head">
-      <span class="sec-num">05</span>
-      <h2>My Thoughts</h2>
-      <p class="hand-note">journal-style posts &amp; reflections</p>
-    </div>
-
+    <div class="section-head"><span class="sec-num">04</span><h2>My Thoughts</h2><span class="sec-line"></span></div>
     <div class="post-list">
       <article class="post">
-        <div class="post-meta"><span class="post-date">Nov 2026</span><span class="post-cat">Reflection</span></div>
-        <h3>Why I made this website</h3>
-        <p class="post-excerpt">I wanted a space that feels like me — not just a school requirement, but a place where I can share my story in my own voice...</p>
-        <div class="post-full" hidden>
-          <p>I wanted a space that feels like me — not just a school requirement, but a place where I can share my story in my own voice. Through this site, I can show my favorite things, my photos, my creative work, and the thoughts I usually keep to myself.</p>
-          <p>Writing this made me realize how much of my identity is in the small things: the music I listen to, the art I make, the people I spend time with. I hope visitors leave this page understanding a little more about what makes me unique.</p>
-        </div>
-        <button class="read-more" aria-expanded="false">Read more ↓</button>
+        <div class="post-meta"><span class="post-date">NOV 2026</span><span class="post-cat">REFLECTION</span></div>
+        <h3>Why I Made This Website</h3>
+        <p class="post-excerpt">I wanted a space that feels like me — a place to share my story in my own voice...</p>
+        <div class="post-full" hidden><p>I wanted a space that feels like me — not just a school requirement, but a place where I can share my story in my own voice. Through this site, I can show my favorite things, my photos, my creative work, and my personal reflections.</p></div>
+        <button class="read-more" aria-expanded="false">Read More ↓</button>
       </article>
-
       <article class="post">
-        <div class="post-meta"><span class="post-date">Oct 2026</span><span class="post-cat">Idea</span></div>
-        <h3>Small things that make my day better</h3>
-        <p class="post-excerpt">A good song, a finished sketch, a game with friends — these small moments add up to a good day...</p>
-        <div class="post-full" hidden>
-          <p>A good song, a finished sketch, a game with friends — these small moments add up to a good day. I don't need big events to feel happy. Sometimes it's just finishing something I started and thinking, "I made that."</p>
-          <p>That's why I keep creating, even when my work isn't perfect. The process itself is the reward.</p>
-        </div>
-        <button class="read-more" aria-expanded="false">Read more ↓</button>
+        <div class="post-meta"><span class="post-date">OCT 2026</span><span class="post-cat">IDEA</span></div>
+        <h3>Small Things That Make My Day Better</h3>
+        <p class="post-excerpt">A good song, a finished sketch, a game with friends — small moments add up...</p>
+        <div class="post-full" hidden><p>A good song, a finished sketch, a game with friends — these small moments add up to a good day. I keep creating, even when my work isn't perfect. The process itself is the reward.</p></div>
+        <button class="read-more" aria-expanded="false">Read More ↓</button>
       </article>
-
       <article class="post">
-        <div class="post-meta"><span class="post-date">Sep 2026</span><span class="post-cat">Reflection</span></div>
-        <h3>What I'm learning about myself</h3>
-        <p class="post-excerpt">Building this site taught me that expressing myself is a skill — and like any skill, it gets better with practice...</p>
-        <div class="post-full" hidden>
-          <p>Building this site taught me that expressing myself is a skill — and like any skill, it gets better with practice. At first, I didn't know what to write. But the more honest I was, the easier it became.</p>
-          <p>I want to keep this space updated and keep sharing who I am, one post at a time.</p>
-        </div>
-        <button class="read-more" aria-expanded="false">Read more ↓</button>
+        <div class="post-meta"><span class="post-date">SEP 2026</span><span class="post-cat">REFLECTION</span></div>
+        <h3>What I'm Learning About Myself</h3>
+        <p class="post-excerpt">Building this site taught me that expressing myself is a skill — it gets better with practice...</p>
+        <div class="post-full" hidden><p>Building this site taught me that expressing myself is a skill — and like any skill, it gets better with practice. The more honest I was, the easier it became.</p></div>
+        <button class="read-more" aria-expanded="false">Read More ↓</button>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ============ 06 CONTACT ============ -->
+<!-- ================= CONTACT ================= -->
 <section class="section" id="contact">
   <div class="wrap">
-    <div class="section-head">
-      <span class="sec-num">06</span>
-      <h2>Contact</h2>
-      <p class="hand-note">say hi! I'd love to hear from you</p>
-    </div>
-
+    <div class="section-head"><span class="sec-num">05</span><h2>Contact</h2><span class="sec-line"></span></div>
     <div class="contact-grid">
-      <div class="contact-info">
-        <h3>Let's connect</h3>
-        <p>Want to say hi, ask about my work, or just share a thought? Send a message below or reach me through my social links. I read everything — please keep it respectful and kind.</p>
-        <!-- PALITAN: totoong social links mo -->
+      <div>
+        <h3>Let's Connect</h3>
+        <p>Want to say hi or ask about my work? Send a message or reach me through my social links. Please keep it respectful and kind.</p>
+        <!-- PALITAN: totoong links mo -->
         <ul class="socials">
           <li><a href="#" rel="noopener">Facebook <span>→ @your-username</span></a></li>
           <li><a href="#" rel="noopener">Instagram <span>→ @your-username</span></a></li>
           <li><a href="#" rel="noopener">Email <span>→ your@email.com</span></a></li>
         </ul>
-        <div class="placeholder ph-small">
-          <span class="ph-icon">✉</span>
-          <strong>YOUR PICTURE HERE</strong>
-          <small>PLACEHOLDER — optional na<br>picture mo sa contact page</small>
-        </div>
       </div>
-
       <form class="contact-form" id="contactForm" novalidate>
-        <label>
-          Your name
-          <input type="text" name="name" placeholder="e.g. Juan Dela Cruz" required>
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" placeholder="you@example.com" required>
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
-        </label>
-        <button type="submit" class="btn btn-dark btn-full">Send message →</button>
+        <label>Your Name<input type="text" name="name" placeholder="e.g. Juan Dela Cruz" required></label>
+        <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+        <label>Message<textarea name="message" rows="5" placeholder="Write your message here..." required></textarea></label>
+        <button type="submit" class="btn btn-red btn-full">Send Message →</button>
         <p class="form-note" id="formNote" role="status"></p>
       </form>
     </div>
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
+<!-- ================= ACTIVITY ================= -->
+<section class="section section-activity" id="activity">
+  <div class="wrap">
+    <div class="section-head"><span class="sec-num">06</span><h2>Activity</h2><span class="sec-line"></span></div>
+    <p class="activity-intro">School activity requirements — lahat ng kailangan, nandito na: Resume, Calendar, Banner, Background, Logo, at Template.</p>
+
+    <div class="activity-nav">
+      <a href="#resume">Resume</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#banner">Banner</a>
+      <a href="#background">Background</a>
+      <a href="#logo">Logo</a>
+      <a href="#template">Template</a>
+    </div>
+
+    <!-- ---- RESUME ---- -->
+    <div class="activity-block" id="resume">
+      <div class="activity-title"><span>A</span><h3>Resume</h3></div>
+      <div class="resume-sheet">
+        <div class="resume-head">
+          <img src="favicon.svg" alt="Logo" width="52" height="52">
+          <div>
+            <h4>GREG</h4>
+            <p>Student — Personal Website</p>
+          </div>
+          <div class="resume-head-right">
+            <p><strong>Birthday:</strong> November 25, 2007</p>
+            <p><strong>Age:</strong> <span id="ageResume">18</span> years old</p>
+            <p><strong>Location:</strong> Philippines</p>
+          </div>
+        </div>
+        <div class="resume-body">
+          <div>
+            <h5>About Me</h5>
+            <!-- PALITAN: resume details mo -->
+            <p>Student who enjoys music, art, games, and expressing myself through creative work. This website is my digital space to share my story, interests, photos, and reflections.</p>
+            <h5>Education</h5>
+            <p><strong>[School Name]</strong> — [Grade / Strand]<br><small>Palitan mo ng totoong school at grade mo.</small></p>
+            <h5>Skills</h5>
+            <ul><li>Creative work &amp; basic design</li><li>Music appreciation</li><li>Teamwork &amp; communication</li><li>Basic web / HTML</li></ul>
+          </div>
+          <div>
+            <h5>Interests</h5>
+            <ul><li>Music</li><li>Art</li><li>Games</li><li>Style</li></ul>
+            <h5>Contact</h5>
+            <p>Email: your@email.com<br>Facebook: @your-username<br>Instagram: @your-username</p>
+            <h5>Objective</h5>
+            <p>To create a personal website where I can express my identity, share my interests and experiences, and let visitors understand what makes me unique.</p>
+          </div>
+        </div>
+      </div>
+      <p class="activity-note">Tip: i-print o i-screenshot ito para sa resume requirement. Palitan ang [School Name] at contact details mo.</p>
+    </div>
+
+    <!-- ---- CALENDAR ---- -->
+    <div class="activity-block" id="calendar">
+      <div class="activity-title"><span>B</span><h3>Calendar</h3></div>
+      <div class="calendar-box">
+        <div class="calendar-head">
+          <button id="calPrev" aria-label="Previous month">←</button>
+          <h4 id="calTitle">November 2026</h4>
+          <button id="calNext" aria-label="Next month">→</button>
+        </div>
+        <div class="calendar-week"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+        <div class="calendar-grid" id="calGrid"></div>
+        <p class="calendar-legend"><span class="dot dot-red"></span> My birthday — <strong>Nov 25</strong> &nbsp; <span class="dot dot-outline"></span> Today</p>
+      </div>
+    </div>
+
+    <!-- ---- BANNER ---- -->
+    <div class="activity-block" id="banner">
+      <div class="activity-title"><span>C</span><h3>Banner</h3></div>
+      <div class="banner-preview">
+        <p class="kicker">// WEBSITE BANNER</p>
+        <h4>GREG<span class="red">.</span></h4>
+        <p>PERSONAL WEBSITE — EST. 2007</p>
+      </div>
+      <p class="activity-note">Ito ang banner ng website (yung nasa taas ng Home). Kung may sarili kang banner image, palitan ang <code>.banner-preview</code> ng <code>&lt;img&gt;</code> mo.</p>
+    </div>
+
+    <!-- ---- BACKGROUND ---- -->
+    <div class="activity-block" id="background">
+      <div class="activity-title"><span>D</span><h3>Background</h3></div>
+      <div class="bg-preview">
+        <p>BACKGROUND PREVIEW</p>
+        <small>Dark Valorant-style background — #0F1923</small>
+      </div>
+      <div class="swatches">
+        <div><span class="sw sw-dark"></span><small>#0F1923<br>Dark Blue</small></div>
+        <div><span class="sw sw-red"></span><small>#FF4655<br>Valorant Red</small></div>
+        <div><span class="sw sw-light"></span><small>#ECE8E1<br>Off-White</small></div>
+        <div><span class="sw sw-card"></span><small>#1A2733<br>Card</small></div>
+      </div>
+      <p class="activity-note">Kung may sarili kang background image, ilagay mo sa <code>style.css</code> sa <code>body</code> — halimbawa: <code>background: url('bg-mo.jpg') center/cover fixed;</code></p>
+    </div>
+
+    <!-- ---- LOGO / FAVICON ---- -->
+    <div class="activity-block" id="logo">
+      <div class="activity-title"><span>E</span><h3>Logo &amp; Favicon</h3></div>
+      <div class="logo-grid">
+        <div class="logo-box">
+          <img src="favicon.svg" alt="Greg logo large" width="120" height="120">
+          <p><strong>Logo</strong><br><small>favicon.svg — ginagamit sa nav at browser tab</small></p>
+        </div>
+        <div class="logo-box">
+          <div class="favicon-sizes">
+            <img src="favicon.svg" alt="Favicon 64" width="64" height="64">
+            <img src="favicon.svg" alt="Favicon 32" width="32" height="32">
+            <img src="favicon.svg" alt="Favicon 16" width="16" height="16">
+          </div>
+          <p><strong>Favicon</strong><br><small>Makikita mo sa taas ng browser tab (yung maliit na red V).</small></p>
+        </div>
+      </div>
+      <p class="activity-note">Para palitan ang logo: palitan ang laman ng <code>favicon.svg</code> — naka-link na ito sa buong site.</p>
+    </div>
+
+    <!-- ---- TEMPLATE ---- -->
+    <div class="activity-block" id="template">
+      <div class="activity-title"><span>F</span><h3>Template</h3></div>
+      <div class="template-box">
+        <div class="tpl tpl-nav">NAV — Home · About · Interests · Gallery · Thoughts · Contact · Activity ▾</div>
+        <div class="tpl tpl-hero">BANNER / HOME — Greg · Birthday Nov 25, 2007 · Profile Card</div>
+        <div class="tpl-row"><div class="tpl">ABOUT</div><div class="tpl">INTERESTS</div></div>
+        <div class="tpl-row"><div class="tpl">GALLERY</div><div class="tpl">THOUGHTS</div></div>
+        <div class="tpl">CONTACT</div>
+        <div class="tpl tpl-activity">ACTIVITY — Resume · Calendar · Banner · Background · Logo · Template</div>
+        <div class="tpl tpl-footer">FOOTER</div>
+      </div>
+      <p class="activity-note">Ito ang layout template ng site — simple lang, isang page lang lahat, may shared nav sa taas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="wrap footer-inner">
-    <p><strong>GREG.</strong> — my personal website. Made with my own voice.</p>
-    <p class="footer-links">
-      <a href="#home">Home</a> · <a href="#about">About</a> · <a href="#interests">Interests</a> ·
-      <a href="#gallery">Gallery</a> · <a href="#thoughts">Thoughts</a> · <a href="#contact">Contact</a>
-    </p>
+    <p><strong>GREG//GG</strong> — Personal Website · Born November 25, 2007</p>
+    <p class="footer-links"><a href="#home">Home</a> · <a href="#about">About</a> · <a href="#interests">Interests</a> · <a href="#gallery">Gallery</a> · <a href="#thoughts">Thoughts</a> · <a href="#contact">Contact</a> · <a href="#activity">Activity</a></p>
     <p class="footer-small">© <span id="year">2026</span> Greg · <a href="#top">Back to top ↑</a></p>
   </div>
 </footer>
 
-<!-- Lightbox for gallery -->
 <div class="lightbox" id="lightbox" role="dialog" aria-label="Gallery preview" hidden>
   <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
   <div class="lightbox-body" id="lightboxBody"></div>
