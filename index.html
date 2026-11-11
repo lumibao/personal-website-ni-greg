@@ -3,119 +3,152 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Greg</title>
-<meta name="description" content="Personal website of Greg — student from the Philippines.">
+<title>GREG — Personal Website</title>
+<meta name="description" content="Personal website of Greg, a student from the Philippines.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="page">
-
-  <header>
-    <a class="name" href="#top">Greg</a>
-    <nav>
-      <a href="#about">About</a>
+<header class="topbar" id="top">
+  <div class="bar-inner">
+    <a href="#home" class="brand">GREG</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">MENU</button>
+    <nav class="menu" id="menu">
+      <a href="#home" class="is-active">Home</a>
+      <a href="#profile">Profile</a>
       <a href="#photos">Photos</a>
       <a href="#notes">Notes</a>
       <a href="#contact">Contact</a>
-      <a href="#school">School</a>
+      <div class="sub">
+        <button class="sub-btn" id="activityBtn" aria-expanded="false" aria-controls="activityMenu">Activity</button>
+        <div class="sub-menu" id="activityMenu">
+          <a href="#resume">Resume</a>
+          <a href="#calendar">Calendar</a>
+          <a href="#banner">Banner</a>
+          <a href="#background">Background</a>
+          <a href="#logo">Logo</a>
+          <a href="#template">Template</a>
+        </div>
+      </div>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <!-- INTRO -->
-  <section id="top">
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="tag">Personal Website</p>
+      <h1>GREG</h1>
+      <p class="hero-sub">Student. Philippines.</p>
+      <p class="hero-line">Birthday <strong>November 25, 2007</strong> — <span id="ageHero">18</span> years old</p>
+      <div class="hero-actions">
+        <a href="#profile" class="btn btn-fill">Enter Profile</a>
+        <a href="#activity" class="btn btn-line">Activity</a>
+      </div>
+    </div>
+
+    <div class="fighter-card">
+      <div class="portrait">
+        <span>Portrait</span>
+        <small>Placeholder</small>
+      </div>
+      <dl class="stats">
+        <div><dt>Name</dt><dd>Greg</dd></div>
+        <div><dt>Birthday</dt><dd>Nov 25, 2007</dd></div>
+        <div><dt>Age</dt><dd><span id="ageCard">18</span></dd></div>
+        <div><dt>Rank</dt><dd>Student</dd></div>
+        <div><dt>Region</dt><dd>Philippines</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="profile">
+  <div class="band-inner">
+    <div class="band-head">
+      <span class="num">01</span>
+      <h2>Profile</h2>
+    </div>
+
     <p class="lead">I'm Greg, a student from the Philippines. This is my personal website.</p>
 
-    <p>It has three parts I actually use: a short page about me, a few photos, and
-    some short notes. The last section is for our ICT subject, where we were asked
-    to make a resume, a calendar, a banner, a background, a logo, and a template.</p>
+    <p>It has a short page about me, a few photos, and some notes. The last section
+    is for our ICT subject, where we were asked to make a resume, a calendar, a banner,
+    a background, a logo, and a template.</p>
 
     <p>I built this with plain HTML and CSS. No framework, no template. I'm still
     learning, so it stays simple on purpose.</p>
 
-    <dl class="facts">
-      <div>
-        <dt>Birthday</dt>
-        <dd>November 25, 2007</dd>
+    <div class="panels">
+      <div class="panel">
+        <h3>Interests</h3>
+        <ul>
+          <li>Music — mostly while studying</li>
+          <li>Drawing — I keep a sketchbook</li>
+          <li>Games — mostly with friends</li>
+        </ul>
       </div>
-      <div>
-        <dt>Age</dt>
-        <dd><span id="age">18</span></dd>
+      <div class="panel">
+        <h3>Skills</h3>
+        <ul>
+          <li>Basic HTML and CSS</li>
+          <li>Drawing</li>
+          <li>Working in a group</li>
+        </ul>
       </div>
-      <div>
-        <dt>From</dt>
-        <dd>Philippines</dd>
-      </div>
-      <div>
-        <dt>Currently</dt>
-        <dd>Student</dd>
-      </div>
-    </dl>
-  </section>
+    </div>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About</h2>
-
-    <p>I'm in school and most of my week goes to that. Outside class I listen to
-    music, draw when I have the time, and play games with friends.</p>
-
-    <p>I don't have a big plan yet. I'm using this site to keep track of what I'm
-    into now, so I can look back at it later.</p>
-
-    <h3>Interests</h3>
-    <ul>
-      <li>Music — I listen to almost anything, mostly while studying.</li>
-      <li>Drawing — I'm not good at it, but I keep a sketchbook.</li>
-      <li>Games — mostly with friends, mostly losing.</li>
-    </ul>
-
-    <h3>Skills</h3>
-    <ul>
-      <li>Basic HTML and CSS</li>
-      <li>Drawing</li>
-      <li>Working in a group</li>
-    </ul>
-  </section>
-
-  <!-- PHOTOS -->
-  <section id="photos">
-    <h2>Photos</h2>
+<section class="band band-dark" id="photos">
+  <div class="band-inner">
+    <div class="band-head">
+      <span class="num">02</span>
+      <h2>Photos</h2>
+    </div>
 
     <p>Empty for now. I'll add photos here once I pick which ones to use.</p>
 
     <div class="grid">
       <figure>
-        <div class="photo"><span>Photo</span></div>
+        <div class="slot"><span>Photo</span></div>
         <figcaption>Placeholder</figcaption>
       </figure>
       <figure>
-        <div class="photo"><span>Photo</span></div>
+        <div class="slot"><span>Photo</span></div>
         <figcaption>Placeholder</figcaption>
       </figure>
       <figure>
-        <div class="photo"><span>Photo</span></div>
+        <div class="slot"><span>Photo</span></div>
         <figcaption>Placeholder</figcaption>
       </figure>
       <figure>
-        <div class="photo"><span>Drawing</span></div>
+        <div class="slot"><span>Drawing</span></div>
         <figcaption>Placeholder</figcaption>
       </figure>
       <figure>
-        <div class="photo"><span>Drawing</span></div>
+        <div class="slot"><span>Drawing</span></div>
         <figcaption>Placeholder</figcaption>
       </figure>
       <figure>
-        <div class="photo"><span>Photo</span></div>
+        <div class="slot"><span>Photo</span></div>
         <figcaption>Placeholder</figcaption>
       </figure>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- NOTES -->
-  <section id="notes">
-    <h2>Notes</h2>
+<section class="band" id="notes">
+  <div class="band-inner">
+    <div class="band-head">
+      <span class="num">03</span>
+      <h2>Notes</h2>
+    </div>
 
     <p>Short entries. I write here when something is worth remembering.</p>
 
@@ -141,15 +174,19 @@
       <p>I'm making this section so I have somewhere to put my thoughts. I don't
       know yet how often I'll update it.</p>
     </article>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
+<section class="band band-dark" id="contact">
+  <div class="band-inner">
+    <div class="band-head">
+      <span class="num">04</span>
+      <h2>Contact</h2>
+    </div>
 
     <p>You can reach me here. I usually reply after class.</p>
 
-    <ul class="contact-list">
+    <ul class="contact-rows">
       <li><span>Email</span><a href="mailto:your@email.com">your@email.com</a></li>
       <li><span>Facebook</span><a href="#">your-username</a></li>
       <li><span>Instagram</span><a href="#">your-username</a></li>
@@ -168,42 +205,42 @@
         <label for="message">Message</label>
         <textarea id="message" rows="4"></textarea>
       </p>
-      <p><button type="submit">Send</button></p>
+      <p><button type="submit" class="btn btn-fill">Send</button></p>
     </form>
     <p id="formMsg" class="form-msg"></p>
     <p class="small">The form doesn't send yet. It only checks that the fields are filled.</p>
-  </section>
+  </div>
+</section>
 
-  <!-- SCHOOL -->
-  <section id="school">
-    <h2>School</h2>
+<section class="band" id="activity">
+  <div class="band-inner">
+    <div class="band-head">
+      <span class="num">05</span>
+      <h2>Activity</h2>
+    </div>
 
     <p>Requirements for our ICT subject: a resume, a calendar, a banner, a
     background, a logo, and a template. All six are below.</p>
 
-    <p class="anchors">
+    <div class="anchors">
       <a href="#resume">Resume</a>
       <a href="#calendar">Calendar</a>
       <a href="#banner">Banner</a>
       <a href="#background">Background</a>
       <a href="#logo">Logo</a>
       <a href="#template">Template</a>
-    </p>
+    </div>
 
-    <!-- 1. RESUME -->
     <div class="block" id="resume">
       <h3>Resume</h3>
-
       <div class="resume">
-        <div class="resume-head">
-          <p class="resume-name">Greg</p>
-          <p class="resume-sub">Student · Philippines</p>
-        </div>
+        <p class="resume-name">Greg</p>
+        <p class="resume-sub">Student · Philippines</p>
 
         <h4>Personal details</h4>
         <table>
           <tr><th>Birthday</th><td>November 25, 2007</td></tr>
-          <tr><th>Age</th><td><span id="age2">18</span></td></tr>
+          <tr><th>Age</th><td><span id="ageResume">18</span></td></tr>
           <tr><th>Email</th><td>your@email.com</td></tr>
         </table>
 
@@ -222,10 +259,8 @@
       </div>
     </div>
 
-    <!-- 2. CALENDAR -->
     <div class="block" id="calendar">
       <h3>Calendar</h3>
-
       <p>November 2026. My birthday is on the 25th.</p>
 
       <table class="calendar">
@@ -245,39 +280,32 @@
       </table>
     </div>
 
-    <!-- 3. BANNER -->
     <div class="block" id="banner">
       <h3>Banner</h3>
-
       <div class="banner">
-        <span class="banner-name">Greg</span>
-        <span class="banner-sub">Personal website</span>
+        <span class="banner-name">GREG</span>
+        <span class="banner-sub">Personal Website</span>
       </div>
-
       <p class="small">Made with text and a border. I'll replace it with an image if I draw one.</p>
     </div>
 
-    <!-- 4. BACKGROUND -->
     <div class="block" id="background">
       <h3>Background</h3>
-
-      <p>The page uses white with a small amount of gray for panels. Links and
-      highlights use one color so the page doesn't look busy.</p>
+      <p>The page uses dark gray with one warm accent colour. Links and highlights
+      share the same accent so the page doesn't look busy.</p>
 
       <ul class="swatches">
-        <li><span class="chip" style="background:#ffffff"></span>#ffffff — page</li>
-        <li><span class="chip" style="background:#f6f6f6"></span>#f6f6f6 — panel</li>
-        <li><span class="chip" style="background:#1a1a1a"></span>#1a1a1a — text</li>
-        <li><span class="chip" style="background:#b4420f"></span>#b4420f — accent</li>
+        <li><span class="chip" style="background:#0a0a0c"></span>#0a0a0c — page</li>
+        <li><span class="chip" style="background:#16181f"></span>#16181f — panel</li>
+        <li><span class="chip" style="background:#f5f3f0"></span>#f5f3f0 — text</li>
+        <li><span class="chip" style="background:#ff2b2b"></span>#ff2b2b — accent</li>
       </ul>
     </div>
 
-    <!-- 5. LOGO -->
     <div class="block" id="logo">
       <h3>Logo</h3>
-
-      <p>A letter G in a square. I made it as an SVG file, so it stays sharp at
-      any size.</p>
+      <p>A letter G in an angled square. I made it as an SVG file, so it stays sharp
+      at any size.</p>
 
       <p class="logos">
         <img src="favicon.svg" alt="Logo, large" width="80" height="80">
@@ -288,31 +316,30 @@
       <p class="small">The smallest one is the favicon, the icon on the browser tab. File: <code>favicon.svg</code></p>
     </div>
 
-    <!-- 6. TEMPLATE -->
     <div class="block" id="template">
       <h3>Template</h3>
-
-      <p>One column, top to bottom. Each section is separated by a thin line.</p>
+      <p>One column with a fixed top menu. Each section is separated by a band.</p>
 
       <ol class="wire">
-        <li>Header — name and links</li>
-        <li>Intro — who I am, quick facts</li>
-        <li>About — interests and skills</li>
+        <li>Menu — name beside the links</li>
+        <li>Hero — name, birthday, portrait card</li>
+        <li>Profile — about, interests, skills</li>
         <li>Photos — six placeholders</li>
         <li>Notes — dated entries</li>
         <li>Contact — links and a form</li>
-        <li>School — the six requirements</li>
+        <li>Activity — the six requirements</li>
         <li>Footer</li>
       </ol>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
+<footer class="foot">
+  <div class="foot-inner">
     <p>Greg · November 2026</p>
     <p><a href="#top">Back to top</a></p>
-  </footer>
-
-</div>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
