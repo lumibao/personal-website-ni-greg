@@ -1,32 +1,34 @@
-# Personal Website ni Greg
+# greg — personal website
 
-Simpleng personal website na ginawa ko para sa school project. Beginner pa lang ako sa HTML at CSS kaya simple lang ang design.
+A small one-page site I built for our ICT subject and kept working on because I liked it.
 
-Birthday ko: **November 25, 2007**
+Birthday: **November 25, 2007**
 
-## Paano buksan
-I-double click lang ang `index.html`. Yun na yun.
+## How to open
+Double-click `index.html`. That's it. No build step, no install.
 
-## Mga sections
-- **Home** - Welcome at picture ko
-- **About Me** - Kwento ko at quick facts (table)
-- **My Interests** - Music, Art, Games, Style
-- **My Gallery** - Mga pictures ko (placeholder muna)
-- **My Thoughts** - Journal ko
-- **Contact** - Socials at message form
-- **Activity** - Resume, Calendar, Banner, Background, Logo, Template
+## Sections
+- **home** — quick intro and a photo placeholder
+- **about** — basics table, values, things I like
+- **photos** — six placeholders
+- **thoughts** — dated notes
+- **contact** — links plus a form that doesn't send anything yet
+- **school stuff** — the six required parts: resume, calendar, banner, background, logo, template
 
 ## Files
-- `index.html` - lahat ng content
-- `style.css` - design (simple lang, light gray at dark blue)
-- `script.js` - age computation, Read More button, contact form
-- `favicon.svg` - logo at favicon ko
+- `index.html` — everything is in here
+- `style.css` — the design (off-white page, serif type, one thin accent color)
+- `script.js` — computes my age from Nov 25, 2007 and checks the contact form
+- `favicon.svg` — the G logo on the browser tab
 
-## Paano palitan ang pictures
-Hanapin ang `[ Picture ko dito ]` sa `index.html`, tapos palitan ng:
+## Replacing the photos
+Look for `photo-box` in `index.html` and swap the div for an image:
+
 ```html
-<img src="picture-ko.jpg" alt="ako" width="300">
+<img src="my-photo.jpg" alt="me" width="300">
 ```
 
-## Paano palitan ang school sa resume
-Hanapin ang `[School Name]` sa `index.html` at palitan ng totoong school ko.
+## Still to do
+- real photos
+- my school name and grade in the resume
+- an actual email address in the contact list
