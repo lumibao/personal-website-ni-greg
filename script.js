@@ -13,47 +13,65 @@ function getAge() {
 }
 
 document.getElementById("ageHero").textContent = getAge();
-document.getElementById("ageCard").textContent = getAge();
 document.getElementById("ageResume").textContent = getAge();
 
 var menu = document.getElementById("menu");
 var menuBtn = document.getElementById("menuBtn");
-var sub = document.querySelector(".sub");
-var subBtn = document.getElementById("activityBtn");
+var tabWrap = document.querySelector(".tab-wrap");
+var activityBtn = document.getElementById("activityBtn");
 
 menuBtn.addEventListener("click", function () {
   var open = menu.classList.toggle("is-open");
   menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
 });
 
-subBtn.addEventListener("click", function (event) {
+activityBtn.addEventListener("click", function (event) {
   event.stopPropagation();
-  var open = sub.classList.toggle("is-open");
-  subBtn.setAttribute("aria-expanded", open ? "true" : "false");
+  var open = tabWrap.classList.toggle("is-open");
+  activityBtn.setAttribute("aria-expanded", open ? "true" : "false");
 });
 
 document.addEventListener("click", function (event) {
-  if (!sub.contains(event.target)) {
-    sub.classList.remove("is-open");
-    subBtn.setAttribute("aria-expanded", "false");
+  if (!tabWrap.contains(event.target)) {
+    tabWrap.classList.remove("is-open");
+    activityBtn.setAttribute("aria-expanded", "false");
   }
 });
 
-document.querySelectorAll(".menu a").forEach(function (link) {
+document.querySelectorAll(".tabs a").forEach(function (link) {
   link.addEventListener("click", function () {
     menu.classList.remove("is-open");
     menuBtn.setAttribute("aria-expanded", "false");
-    sub.classList.remove("is-open");
-    subBtn.setAttribute("aria-expanded", "false");
+    tabWrap.classList.remove("is-open");
+    activityBtn.setAttribute("aria-expanded", "false");
+
+    document.querySelectorAll(".tab").forEach(function (tab) {
+      tab.classList.remove("is-on");
+    });
+
+    var target = link.getAttribute("href");
+
+    if (target === "#resume" || target === "#calendar" || target === "#banner" ||
+        target === "#background" || target === "#logo" || target === "#template") {
+      activityBtn.classList.add("is-on");
+    } else {
+      link.classList.add("is-on");
+    }
   });
 });
 
-document.querySelectorAll(".menu > a").forEach(function (link) {
-  link.addEventListener("click", function () {
-    document.querySelectorAll(".menu > a").forEach(function (item) {
-      item.classList.remove("is-active");
+var slots = document.querySelectorAll(".slot");
+var previewArt = document.getElementById("previewArt");
+var previewName = document.getElementById("previewName");
+
+slots.forEach(function (slot) {
+  slot.addEventListener("click", function () {
+    slots.forEach(function (item) {
+      item.classList.remove("is-on");
     });
-    link.classList.add("is-active");
+    slot.classList.add("is-on");
+    previewArt.textContent = slot.dataset.kind;
+    previewName.textContent = slot.dataset.name;
   });
 });
 
