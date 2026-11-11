@@ -63,16 +63,30 @@ document.querySelectorAll(".tabs a").forEach(function (link) {
 var tiles = document.querySelectorAll(".tile");
 var viewerPic = document.getElementById("viewerPic");
 var viewerName = document.getElementById("viewerName");
+var viewerText = document.getElementById("viewerText");
 
 tiles.forEach(function (tile) {
   tile.addEventListener("click", function () {
+    if (tile.classList.contains("is-empty")) {
+      return;
+    }
+
     tiles.forEach(function (item) {
       item.classList.remove("is-on");
     });
     tile.classList.add("is-on");
-    var label = tile.querySelector(".pic span").textContent;
-    viewerPic.textContent = label;
-    viewerName.textContent = label;
+
+    var img = tile.querySelector(".pic img");
+    var caption = tile.querySelector("figcaption").textContent;
+
+    viewerPic.innerHTML = "";
+    var big = document.createElement("img");
+    big.src = img.src;
+    big.alt = img.alt;
+    viewerPic.appendChild(big);
+
+    viewerName.textContent = caption;
+    viewerText.textContent = img.alt;
   });
 });
 
