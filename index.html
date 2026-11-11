@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greg — My Personal Website</title>
+<meta name="description" content="A digital space where I share my story, favorite things, photos, creative work and personal reflections.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Caveat:wght@600;700&family=Karla:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION (shared menu) ============ -->
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a href="#home" class="logo">GREG<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#thoughts">Thoughts</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ 01 HOME ============ -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="hand-note">welcome to my little corner of the internet ↴</p>
+      <h1>Hi, I'm Greg.<br><span class="hl">This is my space.</span></h1>
+      <p class="hero-lead">
+        A digital space that lets me show who I am in my own voice — through my story,
+        favorite things, photos, creative work and personal reflections.
+        Take your time, explore, and get to know the person behind this site.
+      </p>
+      <div class="hero-btns">
+        <a href="#about" class="btn btn-dark">Explore my story →</a>
+        <a href="#gallery" class="btn btn-yellow">See my gallery</a>
+      </div>
+      <p class="hero-small">Friends, classmates, and anyone curious — welcome!</p>
+    </div>
+
+    <!-- PALITAN: profile picture mo dito. Hanapin lang ang "PLACEHOLDER" sa code. -->
+    <div class="hero-photo">
+      <div class="polaroid">
+        <div class="tape tape-top"></div>
+        <div class="placeholder ph-profile">
+          <span class="ph-icon">◎</span>
+          <strong>PROFILE PICTURE</strong>
+          <small>PLACEHOLDER — ilagay dito<br>ang picture mo</small>
+        </div>
+        <p class="polaroid-caption">— that's me, Greg ✎</p>
+      </div>
+      <p class="hand-note note-rotate">start here! ↑</p>
+    </div>
+  </div>
+
+  <div class="wrap hero-cards">
+    <a href="#about" class="mini-card">
+      <span class="mini-num">01</span>
+      <strong>My Story</strong>
+      <small>Who I am, what I value, and a few fun facts.</small>
+    </a>
+    <a href="#interests" class="mini-card">
+      <span class="mini-num">02</span>
+      <strong>My Interests</strong>
+      <small>The things I love and why they matter to me.</small>
+    </a>
+    <a href="#thoughts" class="mini-card">
+      <span class="mini-num">03</span>
+      <strong>My Thoughts</strong>
+      <small>Journal-style posts, ideas and reflections.</small>
+    </a>
+  </div>
+</section>
+
+<!-- ============ 02 ABOUT ME ============ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="sec-num">02</span>
+      <h2>About Me</h2>
+      <p class="hand-note">the person behind the site</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-bio">
+        <h3>Short biography</h3>
+        <!-- PALITAN: baguhin ang kwento mo dito -->
+        <p>
+          Hi! I'm Greg, a student who enjoys expressing myself through the things I create
+          and the things I love. I made this website so my friends, classmates, and anyone
+          who visits can get a glimpse of who I really am — not just a name on a list,
+          but a person with stories, interests, and a creative side.
+        </p>
+        <p>
+          I believe a personal website should feel welcoming and easy to explore.
+          So I kept this space simple and honest: my story, my favorite things,
+          my photos and creative work, and my personal reflections. If you're reading
+          this, thanks for stopping by — I hope you enjoy looking around.
+        </p>
+
+        <h3 style="margin-top:28px">What I value</h3>
+        <ul class="values">
+          <li><strong>Honesty</strong> — being real about who I am and what I feel.</li>
+          <li><strong>Creativity</strong> — making things, even imperfect ones, is how I learn.</li>
+          <li><strong>Curiosity</strong> — always asking questions and trying new things.</li>
+          <li><strong>Respect</strong> — listening to others and keeping this space welcoming.</li>
+        </ul>
+      </div>
+
+      <aside class="about-side">
+        <div class="fact-card">
+          <h3>Quick facts</h3>
+          <!-- PALITAN: totoong details mo -->
+          <dl>
+            <div><dt>Name</dt><dd>Greg</dd></div>
+            <div><dt>Role</dt><dd>Student</dd></div>
+            <div><dt>Based in</dt><dd>Philippines</dd></div>
+            <div><dt>Favorite color</dt><dd>Mustard yellow</dd></div>
+            <div><dt>Currently into</dt><dd>Music &amp; art</dd></div>
+            <div><dt>Motto</dt><dd>"Make it personal."</dd></div>
+          </dl>
+        </div>
+        <div class="placeholder ph-small">
+          <span class="ph-icon">✎</span>
+          <strong>SIGNATURE / DOODLE</strong>
+          <small>PLACEHOLDER — lagay dito ang<br>signature o doodle mo</small>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 MY INTERESTS ============ -->
+<section class="section section-alt" id="interests">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="sec-num">03</span>
+      <h2>My Interests</h2>
+      <p class="hand-note">things I love, and why they matter</p>
+    </div>
+
+    <div class="interest-grid">
+      <article class="interest-card">
+        <div class="placeholder ph-card">
+          <span class="ph-icon">♪</span>
+          <small>PLACEHOLDER — picture ng<br>favorite music mo</small>
+        </div>
+        <h3>Music</h3>
+        <p>Music is how I express feelings I can't always put into words. It keeps me company while studying and inspires me when I'm creating.</p>
+        <span class="tag">♪ listening</span>
+      </article>
+
+      <article class="interest-card">
+        <div class="placeholder ph-card">
+          <span class="ph-icon">✎</span>
+          <small>PLACEHOLDER — picture ng<br>artwork mo</small>
+        </div>
+        <h3>Art</h3>
+        <p>Drawing and making things by hand is my way of relaxing and showing ideas visually. Every piece teaches me something new.</p>
+        <span class="tag">✎ creating</span>
+      </article>
+
+      <article class="interest-card">
+        <div class="placeholder ph-card">
+          <span class="ph-icon">🎮</span>
+          <small>PLACEHOLDER — picture ng<br>laro mo</small>
+        </div>
+        <h3>Games</h3>
+        <p>Games let me explore new worlds, solve problems, and have fun with friends. They also teach me teamwork and patience.</p>
+        <span class="tag">🎮 playing</span>
+      </article>
+
+      <article class="interest-card">
+        <div class="placeholder ph-card">
+          <span class="ph-icon">✦</span>
+          <small>PLACEHOLDER — picture ng<br>style mo</small>
+        </div>
+        <h3>Style</h3>
+        <p>Style is part of my identity. The way I dress and present myself is a small but honest way of saying "this is me."</p>
+        <span class="tag">✦ expressing</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 MY GALLERY ============ -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="sec-num">04</span>
+      <h2>My Gallery</h2>
+      <p class="hand-note">photos, memories &amp; creative work</p>
+    </div>
+
+    <div class="gallery-filters" id="galleryFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="photo">Photos</button>
+      <button class="filter-btn" data-filter="work">Creative work</button>
+    </div>
+
+    <!-- PALITAN: palitan ang bawat placeholder ng totoong picture mo.
+         Para sa <img>, palitan ang <div class="placeholder..."> ng:
+         <img src="picture-mo.jpg" alt="Caption"> -->
+    <div class="gallery-grid" id="galleryGrid">
+      <figure class="gallery-item" data-cat="photo">
+        <div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER<br>Photo 1</small></div>
+        <figcaption><strong>Photo 1</strong> — caption mo dito</figcaption>
+      </figure>
+      <figure class="gallery-item" data-cat="work">
+        <div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER<br>Creative work 1</small></div>
+        <figcaption><strong>Creative work 1</strong> — caption mo dito</figcaption>
+      </figure>
+      <figure class="gallery-item" data-cat="photo">
+        <div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER<br>Photo 2</small></div>
+        <figcaption><strong>Photo 2</strong> — caption mo dito</figcaption>
+      </figure>
+      <figure class="gallery-item" data-cat="work">
+        <div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER<br>Creative work 2</small></div>
+        <figcaption><strong>Creative work 2</strong> — caption mo dito</figcaption>
+      </figure>
+      <figure class="gallery-item" data-cat="photo">
+        <div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER<br>Photo 3</small></div>
+        <figcaption><strong>Photo 3</strong> — caption mo dito</figcaption>
+      </figure>
+      <figure class="gallery-item" data-cat="work">
+        <div class="placeholder ph-gallery"><span class="ph-icon">▣</span><small>PLACEHOLDER<br>Creative work 3</small></div>
+        <figcaption><strong>Creative work 3</strong> — caption mo dito</figcaption>
+      </figure>
+    </div>
+    <p class="gallery-note">↑ Click any item to view it bigger. Palitan mo lang ng totoong pictures — naka-ready na ang grid.</p>
+  </div>
+</section>
+
+<!-- ============ 05 MY THOUGHTS ============ -->
+<section class="section section-alt" id="thoughts">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="sec-num">05</span>
+      <h2>My Thoughts</h2>
+      <p class="hand-note">journal-style posts &amp; reflections</p>
+    </div>
+
+    <div class="post-list">
+      <article class="post">
+        <div class="post-meta"><span class="post-date">Nov 2026</span><span class="post-cat">Reflection</span></div>
+        <h3>Why I made this website</h3>
+        <p class="post-excerpt">I wanted a space that feels like me — not just a school requirement, but a place where I can share my story in my own voice...</p>
+        <div class="post-full" hidden>
+          <p>I wanted a space that feels like me — not just a school requirement, but a place where I can share my story in my own voice. Through this site, I can show my favorite things, my photos, my creative work, and the thoughts I usually keep to myself.</p>
+          <p>Writing this made me realize how much of my identity is in the small things: the music I listen to, the art I make, the people I spend time with. I hope visitors leave this page understanding a little more about what makes me unique.</p>
+        </div>
+        <button class="read-more" aria-expanded="false">Read more ↓</button>
+      </article>
+
+      <article class="post">
+        <div class="post-meta"><span class="post-date">Oct 2026</span><span class="post-cat">Idea</span></div>
+        <h3>Small things that make my day better</h3>
+        <p class="post-excerpt">A good song, a finished sketch, a game with friends — these small moments add up to a good day...</p>
+        <div class="post-full" hidden>
+          <p>A good song, a finished sketch, a game with friends — these small moments add up to a good day. I don't need big events to feel happy. Sometimes it's just finishing something I started and thinking, "I made that."</p>
+          <p>That's why I keep creating, even when my work isn't perfect. The process itself is the reward.</p>
+        </div>
+        <button class="read-more" aria-expanded="false">Read more ↓</button>
+      </article>
+
+      <article class="post">
+        <div class="post-meta"><span class="post-date">Sep 2026</span><span class="post-cat">Reflection</span></div>
+        <h3>What I'm learning about myself</h3>
+        <p class="post-excerpt">Building this site taught me that expressing myself is a skill — and like any skill, it gets better with practice...</p>
+        <div class="post-full" hidden>
+          <p>Building this site taught me that expressing myself is a skill — and like any skill, it gets better with practice. At first, I didn't know what to write. But the more honest I was, the easier it became.</p>
+          <p>I want to keep this space updated and keep sharing who I am, one post at a time.</p>
+        </div>
+        <button class="read-more" aria-expanded="false">Read more ↓</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="sec-num">06</span>
+      <h2>Contact</h2>
+      <p class="hand-note">say hi! I'd love to hear from you</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Let's connect</h3>
+        <p>Want to say hi, ask about my work, or just share a thought? Send a message below or reach me through my social links. I read everything — please keep it respectful and kind.</p>
+        <!-- PALITAN: totoong social links mo -->
+        <ul class="socials">
+          <li><a href="#" rel="noopener">Facebook <span>→ @your-username</span></a></li>
+          <li><a href="#" rel="noopener">Instagram <span>→ @your-username</span></a></li>
+          <li><a href="#" rel="noopener">Email <span>→ your@email.com</span></a></li>
+        </ul>
+        <div class="placeholder ph-small">
+          <span class="ph-icon">✉</span>
+          <strong>YOUR PICTURE HERE</strong>
+          <small>PLACEHOLDER — optional na<br>picture mo sa contact page</small>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <label>
+          Your name
+          <input type="text" name="name" placeholder="e.g. Juan Dela Cruz" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </label>
+        <button type="submit" class="btn btn-dark btn-full">Send message →</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p><strong>GREG.</strong> — my personal website. Made with my own voice.</p>
+    <p class="footer-links">
+      <a href="#home">Home</a> · <a href="#about">About</a> · <a href="#interests">Interests</a> ·
+      <a href="#gallery">Gallery</a> · <a href="#thoughts">Thoughts</a> · <a href="#contact">Contact</a>
+    </p>
+    <p class="footer-small">© <span id="year">2026</span> Greg · <a href="#top">Back to top ↑</a></p>
+  </div>
+</footer>
+
+<!-- Lightbox for gallery -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Gallery preview" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <div class="lightbox-body" id="lightboxBody"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
