@@ -1,15 +1,13 @@
-// my birthday is November 25, 2007
-// I compute my age here so I don't have to update it every year
-
-var birthday = new Date(2007, 10, 25); // months start at 0, so 10 = November
+// Age, from my birthday
+var birthday = new Date(2007, 10, 25); // 10 = November
 
 function getAge() {
-  var today = new Date();
-  var age = today.getFullYear() - birthday.getFullYear();
-  var monthDiff = today.getMonth() - birthday.getMonth();
+  var now = new Date();
+  var age = now.getFullYear() - birthday.getFullYear();
+  var monthDiff = now.getMonth() - birthday.getMonth();
 
-  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthday.getDate())) {
-    age = age - 1;
+  if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < birthday.getDate())) {
+    age -= 1;
   }
 
   return age;
@@ -18,20 +16,19 @@ function getAge() {
 document.getElementById("age").textContent = getAge();
 document.getElementById("age2").textContent = getAge();
 
-// contact form
-// this doesn't send anywhere yet, I just check if the fields are filled
+// Contact form: checks the fields, doesn't send anything yet
 document.getElementById("contactForm").addEventListener("submit", function (event) {
   event.preventDefault();
 
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
-  var feedback = document.getElementById("formMsg");
+  var name = document.getElementById("name").value.trim();
+  var email = document.getElementById("email").value.trim();
+  var message = document.getElementById("message").value.trim();
+  var msg = document.getElementById("formMsg");
 
-  if (name === "" || email === "" || message === "") {
-    feedback.textContent = "Fill in all three fields first.";
+  if (!name || !email || !message) {
+    msg.textContent = "Please fill in all three fields.";
     return;
   }
 
-  feedback.textContent = "Thanks " + name + ". This form doesn't send anything yet, sorry — but I read it.";
+  msg.textContent = "Thanks, " + name + ". This form doesn't send yet.";
 });
