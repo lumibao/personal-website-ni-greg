@@ -1,37 +1,33 @@
 # Personal Website ni Greg
 
-Personal website na ginawa base sa diagram: Home, About Me, My Interests, My Gallery, My Thoughts, at Contact — may shared navigation menu.
+Simple Valorant-style personal website. Birthday: **November 25, 2007**.
 
 ## Paano buksan
-- I-double click ang `index.html` — bubukas sa browser.
-- O i-run ang local server: `python3 -m http.server 8000` tapos buksan ang `http://localhost:8000`
+- I-double click ang `index.html`, o
+- `python3 -m http.server 8000` tapos buksan ang `http://localhost:8000`
+
+## Nav Menu
+Home · About · Interests · Gallery · Thoughts · Contact · **Activity ▾**
+
+### Activity (lahat ng school requirements)
+- **Resume** — `#resume` (palitan ang school at contact details)
+- **Calendar** — `#calendar` (November 2026, naka-highlight ang Nov 25 birthday mo; may prev/next month)
+- **Banner** — `#banner` (yung banner sa taas ng Home)
+- **Background** — `#background` (dark #0F1923 + color swatches)
+- **Logo** — `#logo` (favicon.svg, makikita rin sa browser tab)
+- **Template** — `#template` (layout diagram ng site)
 
 ## Files
-- `index.html` — lahat ng content (sections 01–06)
-- `style.css` — design (cream paper, black headers, mustard yellow — gaya ng diagram)
-- `script.js` — mobile menu, gallery filter, read more, contact form
+- `index.html` — content + lahat ng sections
+- `style.css` — Valorant-style design (dark #0F1923, red #FF4655, angular cuts)
+- `script.js` — age calculator (from Nov 25, 2007), calendar, gallery, read more, form
+- `favicon.svg` — logo + favicon (red V)
 
-## Paano palitan ang pictures (PLACEHOLDER lang muna)
-Hanapin sa `index.html` ang salitang **PLACEHOLDER** o **PALITAN**. Halimbawa:
-
+## Paano palitan ang pictures
+Hanapin ang **PLACEHOLDER** / **PALITAN** sa `index.html`, tapos palitan ng:
 ```html
-<!-- ngayon -->
-<div class="placeholder ph-profile">... PROFILE PICTURE ...</div>
-
-<!-- palitan ng ganito -->
-<img src="profile.jpg" alt="Greg" style="width:100%;border-radius:10px">
+<img src="picture-mo.jpg" alt="Greg" style="width:100%">
 ```
 
-Ilagay ang picture files sa tabi ng `index.html`, tapos baguhin ang `src` sa filename mo.
-
-## Paano baguhin ang text
-- Biography: hanapin ang `Short biography` sa `index.html`
-- Quick facts: hanapin ang `Quick facts`
-- Interests: hanapin ang `My Interests` (Music / Art / Games / Style)
-- Gallery captions: hanapin ang `caption mo dito`
-- Thoughts posts: hanapin ang `Why I made this website`
-- Social links: hanapin ang `Facebook` sa Contact section
-
-## Notes
-- Ang contact form ay front-end demo lang (walang backend) — nagpapakita lang ng message pag na-submit.
-- Walang external images — lahat placeholder para ikaw na maglagay ng totoong pictures.
+## Paano palitan ang logo/favicon
+Palitan ang laman ng `favicon.svg` — automatic na mag-a-update sa nav, resume, at browser tab.
