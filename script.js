@@ -60,18 +60,19 @@ document.querySelectorAll(".tabs a").forEach(function (link) {
   });
 });
 
-var slots = document.querySelectorAll(".slot");
-var previewArt = document.getElementById("previewArt");
-var previewName = document.getElementById("previewName");
+var tiles = document.querySelectorAll(".tile");
+var viewerPic = document.getElementById("viewerPic");
+var viewerName = document.getElementById("viewerName");
 
-slots.forEach(function (slot) {
-  slot.addEventListener("click", function () {
-    slots.forEach(function (item) {
+tiles.forEach(function (tile) {
+  tile.addEventListener("click", function () {
+    tiles.forEach(function (item) {
       item.classList.remove("is-on");
     });
-    slot.classList.add("is-on");
-    previewArt.textContent = slot.dataset.kind;
-    previewName.textContent = slot.dataset.name;
+    tile.classList.add("is-on");
+    var label = tile.querySelector(".pic span").textContent;
+    viewerPic.textContent = label;
+    viewerName.textContent = label;
   });
 });
 
