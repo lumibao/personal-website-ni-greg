@@ -46,14 +46,6 @@
   <p class="ghost-word" aria-hidden="true">GREG</p>
 
   <div class="select-inner">
-    <div class="art">
-      <div class="art-slot">
-        <span>Portrait</span>
-        <small>Placeholder</small>
-      </div>
-      <p class="art-tag">P1</p>
-    </div>
-
     <div class="select-copy">
       <p class="eyebrow">Personal Website</p>
       <h1>GREG</h1>
@@ -137,27 +129,43 @@
         <span>02</span>
       </div>
       <div class="panel-body">
-        <div class="preview">
-          <div class="preview-art" id="previewArt">
-            <span>Photo</span>
-          </div>
-          <div class="preview-copy">
-            <p class="eyebrow">Selected</p>
-            <h2 id="previewName">Photo</h2>
-            <p id="previewText">Empty for now. I'll add photos here once I pick which ones to use.</p>
-          </div>
+        <p class="lede">Empty for now. I'll add photos here once I pick which ones to use.</p>
+
+        <div class="gallery">
+          <figure class="tile">
+            <div class="pic"><span>Photo 1</span></div>
+            <figcaption>Placeholder</figcaption>
+          </figure>
+          <figure class="tile">
+            <div class="pic"><span>Photo 2</span></div>
+            <figcaption>Placeholder</figcaption>
+          </figure>
+          <figure class="tile">
+            <div class="pic"><span>Photo 3</span></div>
+            <figcaption>Placeholder</figcaption>
+          </figure>
+          <figure class="tile">
+            <div class="pic"><span>Drawing 1</span></div>
+            <figcaption>Placeholder</figcaption>
+          </figure>
+          <figure class="tile">
+            <div class="pic"><span>Drawing 2</span></div>
+            <figcaption>Placeholder</figcaption>
+          </figure>
+          <figure class="tile">
+            <div class="pic"><span>Photo 4</span></div>
+            <figcaption>Placeholder</figcaption>
+          </figure>
         </div>
 
-        <p class="rail-label">Slots</p>
-        <div class="rail" id="rail">
-          <button class="slot is-on" data-name="Photo" data-kind="Photo"><span>1</span></button>
-          <button class="slot" data-name="Photo" data-kind="Photo"><span>2</span></button>
-          <button class="slot" data-name="Photo" data-kind="Photo"><span>3</span></button>
-          <button class="slot" data-name="Drawing" data-kind="Drawing"><span>4</span></button>
-          <button class="slot" data-name="Drawing" data-kind="Drawing"><span>5</span></button>
-          <button class="slot" data-name="Photo" data-kind="Photo"><span>6</span></button>
+        <div class="viewer" id="viewer">
+          <div class="viewer-pic" id="viewerPic"><span>Photo 1</span></div>
+          <div class="viewer-copy">
+            <p class="eyebrow">Selected</p>
+            <h2 id="viewerName">Photo 1</h2>
+            <p>Placeholder. Select a square above to preview it here.</p>
+          </div>
         </div>
-        <p class="foot-note">All six are placeholders. Select a slot to preview it.</p>
       </div>
     </div>
   </div>
@@ -345,7 +353,7 @@
             <li>Menu — tabs across the top</li>
             <li>Home — name, stats, portrait</li>
             <li>Profile — about, interests, skills</li>
-            <li>Photos — six slots and a preview</li>
+            <li>Photos — six square tiles and a preview</li>
             <li>Notes — dated entries</li>
             <li>Contact — links and a form</li>
             <li>Activity — the six requirements</li>
