@@ -1,42 +1,37 @@
-// script ko - simple lang
+// my birthday is November 25, 2007
+// I compute my age here so I don't have to update it every year
 
-// para sa age ko - birthday ko November 25, 2007
-var birthday = new Date(2007, 10, 25); // 10 = November
-var today = new Date();
-var age = today.getFullYear() - birthday.getFullYear();
-var m = today.getMonth() - birthday.getMonth();
-if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
-  age--;
-}
-document.getElementById('age').textContent = age;
-document.getElementById('age2').textContent = age;
-document.getElementById('age3').textContent = age;
+var birthday = new Date(2007, 10, 25); // months start at 0, so 10 = November
 
-// para sa Read More button sa Thoughts
-function showMore(btn) {
-  var post = btn.parentElement;
-  var more = post.querySelector('.more');
-  if (more.style.display === 'none') {
-    more.style.display = 'block';
-    btn.textContent = 'Show Less';
-  } else {
-    more.style.display = 'none';
-    btn.textContent = 'Read More';
+function getAge() {
+  var today = new Date();
+  var age = today.getFullYear() - birthday.getFullYear();
+  var monthDiff = today.getMonth() - birthday.getMonth();
+
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthday.getDate())) {
+    age = age - 1;
   }
+
+  return age;
 }
 
-// para sa contact form
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var message = document.getElementById('message').value;
+document.getElementById("age").textContent = getAge();
+document.getElementById("age2").textContent = getAge();
 
-  if (name == '' || email == '' || message == '') {
-    document.getElementById('formMsg').textContent = 'Punan mo muna lahat ng fields.';
+// contact form
+// this doesn't send anywhere yet, I just check if the fields are filled
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var feedback = document.getElementById("formMsg");
+
+  if (name === "" || email === "" || message === "") {
+    feedback.textContent = "Fill in all three fields first.";
     return;
   }
 
-  document.getElementById('formMsg').textContent = 'Salamat ' + name + '! Na-receive ko na ang message mo. (Demo lang ito, wala pang totoong server)';
-  document.getElementById('contactForm').reset();
+  feedback.textContent = "Thanks " + name + ". This form doesn't send anything yet, sorry — but I read it.";
 });
