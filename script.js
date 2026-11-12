@@ -13,7 +13,6 @@ function getAge() {
 }
 
 document.getElementById("ageHero").textContent = getAge();
-document.getElementById("ageResume").textContent = getAge();
 
 var menu = document.getElementById("menu");
 var menuBtn = document.getElementById("menuBtn");
