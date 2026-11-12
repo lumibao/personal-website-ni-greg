@@ -772,36 +772,106 @@ textarea {
   border: 1px solid rgba(255, 30, 91, 0.5);
 }
 
-.resume {
-  max-width: 720px;
-  padding: 24px;
-  background: linear-gradient(160deg, rgba(255, 30, 91, 0.07), rgba(255, 255, 255, 0.02) 40%);
-  border: 1px solid var(--hair);
-  border-left: 2px solid var(--pink);
+.sheet {
+  max-width: 800px;
+  background: #ffffff;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 40px 44px;
+  border-radius: 2px;
+  box-shadow: 0 30px 70px -40px #000;
 }
 
-.resume-name {
-  font-family: var(--head);
-  font-size: 38px;
+.sheet-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
   font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  margin: 0 0 4px;
+  line-height: 1.2;
+  color: #111;
+}
+
+.sheet-title {
+  text-align: center;
   font-style: italic;
-  letter-spacing: 0.03em;
-  margin: 0;
-  line-height: 1;
+  margin: 0 0 8px;
+  color: #333;
 }
 
-.resume-sub {
-  font-family: var(--head);
+.sheet-contact {
+  text-align: center;
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--dim);
-  margin: 4px 0 8px;
+  margin: 0 0 20px;
+  color: #222;
 }
 
-.resume .row p {
-  color: #d5d5de;
+.sheet-contact a {
+  color: #111;
+  text-decoration: underline;
+}
+
+.sheet h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #111;
+  padding-bottom: 3px;
+  margin: 24px 0 10px;
+  line-height: 1.4;
+  color: #111;
+}
+
+.sheet h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 2px;
+  line-height: 1.4;
+  color: #111;
+}
+
+.sheet p {
+  margin: 0 0 6px;
+  color: #222;
+}
+
+.sheet .meta {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.sheet .entry {
+  margin-bottom: 12px;
+}
+
+.sheet ul {
+  margin: 0 0 8px;
+  padding-left: 22px;
+}
+
+.sheet li {
+  margin-bottom: 3px;
+  color: #222;
+}
+
+.sheet b {
+  color: #111;
+}
+
+.sheet-footer {
+  text-align: center;
+  font-style: italic;
+  margin-top: 28px;
+  color: #444;
 }
 
 .cal {
